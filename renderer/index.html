@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Password Application</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-primary">
+    <div class="container mt-5">
+        <div class="card col-8 mx-auto bg-light mb-2" >
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        <img  class="card-img-top w-25 mb-2" src="./images/pass.png" alt="pass">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <input class="form-control mb-2" id="platform" type="text" placeholder="Platform"/>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <input class="form-control mb-2" id="email" type="email" placeholder="Email"/>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <input class="form-control" id="password" type="text" placeholder="Password"/>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        <button class="btn btn-warning my-2 form-control text-white" id="button">Add</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <input class="form-control" id="search" type="text" placeholder="Search"/>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        <button class="btn my-2 form-control btn-warning text-white"  id="searchButton">Search</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        <h5 id="account-info" class="card-title"></h5>
+                        <p id="platformOut"></p>
+                        <p id="emailOut" ></p>
+                        <p id="passwordOut" ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  </body>
+  <script src="./js/renderer.js"> </script>
+</html>
